@@ -3,7 +3,7 @@ from read_data import *
 import re
 from flask import Flask, render_template
 
-ai.api_key = "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"
+ai.api_key ="/"
 df = pd.read_excel('data_hackaton.xlsx')
 
 
