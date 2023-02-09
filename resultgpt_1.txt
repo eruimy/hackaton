@@ -1,5 +1,7 @@
-
-
 Matching score: 0.8
 
-Improvement: To further improve the matching score, you could add more keywords from the ad to the landing page text. You could also make sure that the text on the ad and the landing page are closely related. Additionally, you could use relevant visuals and images on the ad to further draw attention and create a stronger connection with the landing page.
+Recommendations:
+To further improve the matching score, you could:
+- add more keywords from the ad to the landing page text.
+- make sure that the text on the ad and the landing page are closely related.
+Additionally, you could use relevant visuals and images on the ad to further draw attention and create a stronger connection with the landing page.

@@ -1,21 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<p>Matching score for ad 1</p>
-<table style="table-layout:fixed; width:700px">
-  <tr>
-    <td>{{score_1}}</td>
-  </tr>
-</table>
+    <title>TLV Team - Creative Optimizer</title>
 
-<p>Matching score for ad 2</p>
-<table style="table-layout:fixed; width:700px">
-  <tr>
-    <td class="tdbreak">{{score_2}}</td>
-  </tr>
-</table>
+    <!-- The compiled CSS file -->
+    <link rel="stylesheet" href="css/production.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
+    <!-- Web fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,700|Playfair+Display:900"
+      rel="stylesheet"
+    />
 
-<p> Ad 1 is serving better the website than Ad 2 </p>
+    <!-- favicon.ico. Place these in the root directory. -->
+    <link rel="shortcut icon" href="favicon.ico" />
 
-
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 h-screen">
+    <header
+      class="w-full h-14 mb-3 bg-sky-700 text-white px-8 flex items-center"
+    >
+      <img
+        src="/static/logo.png"
+        width="40"
+        height="40"
+        class="mr-4"
+        alt="LinkedIn Logo"
+      />
+      <h3>GAI Hackathon</h3>
+    </header>
+    <div class="flex justify-center">
+      <main
+        class="rounded bg-white m-6 p-8 h-2/4 max-w-xl min-w-[600px] drop-shadow"
+      >
+        <h1 class="text-2xl text-sky-900 font-bold">Matching Prediction</h1>
+        <div class="grid grid-cols-2 gap-4 py-2 divide-x">
+          <div class="p-4 border-2 border-amber-600 rounded">
+            <h2 class="text-sky-700 mb-2">Matching score for ad 1</h2>
+            <p class="text-gray-600 w-full whitespace-pre-line justify-center">
+              {{score_1}}
+            </p>
+          </div>
+          <div class="pl-6 p-4">
+            <h2 class="text-sky-700 mb-2">Matching score for ad 2</h2>
+            <p class="text-gray-600 w-full whitespace-pre-line justify-center">
+              {{score_2}}
+            </p>
+          </div>
+        </div>
+        <div class="mt-8 w-full flex justify-center">
+          <h2>
+            <strong>Ad 1</strong> has a
+            <i class="text-amber-600">
+              {{percent_score}} %
+            </i>
+            higher relevance score compared to <strong>Ad 2</strong>, making it
+            a better fit for the landing page.
+          </h2>
+        </div>
+      </main>
+    </div>
+    <footer class="w-full h-10 bg-sky-700 fixed bottom-0"></footer>
+  </body>
+</html>

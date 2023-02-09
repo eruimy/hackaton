@@ -47,9 +47,8 @@ else:
     with open("resultgpt_2.txt", "w") as f:
         f.write(result2)
 
-result1_text = "\n".join(result1)
-
-result2_text = "\n".join(result2)
+result1_text = " ".join(result1)
+result2_text = " ".join(result2)
 @app.route("/results")
 def result1_app():
     return render_template("results.html", result1=result1_text, result2=result2_text)
@@ -60,14 +59,14 @@ result1 = ' '.join(result1)
 score_1 = float(re.findall(r"\d+\.\d+",result1)[0])
 result2 =  ' '.join(result2)
 score_2 = float(re.findall(r"\d+\.\d+",result2)[0])
-
+percent = round((score_1 - score_2)*100,2)
 # if score_1 - score_2 > 0:
 #     print(" Ad 1 is serving better the website than Ad 2 ")
 # else:
 #     print(" Ad 2 is serving better the website than Ad 1 ")
 @app.route("/results/score")
 def resultscoreapp():
-    return render_template("results2.html", score_1=str(score_1), score_2=str(score_2))
+    return render_template("results2.html", score_1=str(score_1), score_2=str(score_2), percent_score = percent)
 
 
 if __name__ == '__main__':

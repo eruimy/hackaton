@@ -1,85 +1,81 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <head>
+    <title>TLV Team - Creative Optimizer</title>
 
-        <!-- Meta -->
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- The compiled CSS file -->
+    <link rel="stylesheet" href="css/production.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
-        <title>TLV TEAM </title>
-        <meta name="description" content="">
+    <!-- Web fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,700|Playfair+Display:900"
+      rel="stylesheet"
+    />
 
-        <!-- The compiled CSS file -->
-        <link rel="stylesheet" href="css/production.css">
+    <!-- favicon.ico. Place these in the root directory. -->
+    <link rel="shortcut icon" href="favicon.ico" />
 
-        <!-- Web fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Playfair+Display:900" rel="stylesheet">
-
-        <!-- favicon.ico. Place these in the root directory. -->
-        <link rel="shortcut icon" href="favicon.ico">
-
-    </head>
-
-    <body>
-
-
-    <div class="grid-row">
-
-                <!-- Header -->
-        <header class="header full-width">
-
-            <!-- Mobile header -->
-            <div class="show-on-mobile pt1 pl2 pr2 mb1">
-                <div class="border--bottom pt1">
-                    <div class="grid-row grid-row--center pb1">
-                        <div class="grid-column span-half">
-                            <!-- Mobile logo -->
-                            <div class="mb0"><img class="logo--mobile" src="/static/logo.png" alt="Linkedin" title="Linkedin"></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Desktop header -->
-            <!-- Desktop logo -->
-
-
-        </header>
-        
-        <!-- Hero image -->
-        <div class="hero-container full-width show-on-mobile pt1 pl2 pr2">
-            <div class="hero full-width full-height" style="background:rgba(0,0,0,0) url(/img/1.jpg) no-repeat scroll center center/cover"></div>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 h-screen">
+    <header
+      class="w-full h-14 mb-3 bg-sky-700 text-white px-8 flex items-center"
+    >
+      <img
+        src="/static/logo.png"
+        width="40"
+        height="40"
+        class="mr-4"
+        alt="LinkedIn Logo"
+      />
+      <h3>GAI Hackathon</h3>
+    </header>
+    <div class="flex justify-center">
+      <main class="rounded bg-white m-6 p-8 h-2/4 max-w-xl drop-shadow">
+        <h1 class="text-2xl text-sky-900 font-bold">TLV TEAM</h1>
+        <p class="text-gray-600 max-w-xl mt-1 text-justify">
+          Predicting ad creative-to-landing-page matching with generated
+          suggetions for improvement to increase conversion rate.
+          <br />Utilizing a combination of text based GAI with OCR for image
+          parsing to create a quality score for every ad on LinkedIn.
+        </p>
+        <div class="flex flex-row w-full my-6 gap-x-4 justify-center">
+          <form action="/ad_1">
+            <button
+              name="ad_1"
+              class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded"
+              type="submit"
+            >
+              See Ad 1
+            </button>
+          </form>
+          <form action="/ad_2">
+            <button
+              name="ad2"
+              class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded"
+              type="submit"
+            >
+              See Ad 2
+            </button>
+          </form>
         </div>
-        <div class="hide-on-mobile hero" style="background:rgba(0,0,0,0) url(/img/1.jpg) no-repeat scroll center center/cover"></div>
-
-        <!-- Body -->
-        <div class="body full-width pt1 pr2 pb2 pl2">
-
-            <!-- Page Content -->
-            <main class="content pt2 pb2">
-                <h2>TLV TEAM </h2>
-                <p>We propose to use GAI in conjunction with OCR on ad images and their corresponding websites to create a quality score(compatibility score) for each ad on LinkedIn.</p>
-                <form action="/ad_1" style="line-height:3.5em" >
-                    <button name="ad1" type="submit"> See Ad 1 </button>
-                </form>
-                <form action="/ad_2", style="line-height:3.5em" >
-                    <button name="ad2" type="submit"> See Ad 2  </button>
-
-                </form>
-                <form action="/results", style="line-height:6.5em" >
-                    <button name="result" type="submit"> Result  </button>
-                </form>
-            </main>
-                        <!-- Footer -->
-            <footer class="border--top pt1 pb1">
-            </footer>
-        </div><!-- end Body -->
-
+        <form action="/results" class="w-full flex justify-center">
+          <button
+            name="result"
+            type="submit"
+            class="bg-sky-700 hover:bg-sky-900 text-white font-bold py-2 px-4 rounded"
+          >
+            Calculate Match
+          </button>
+        </form>
+      </main>
     </div>
-
-    </body>
+    <footer class="w-full h-10 bg-sky-700 fixed bottom-0"></footer>
+  </body>
 </html>
-

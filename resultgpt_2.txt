@@ -1,3 +1,7 @@
+Matching score: 0.6
 
-
-The matching score between the add and the website is 0.6. To improve the matching score, you could include more specific details from the website in the ad, such as the names of the case studies, or the exact percentages of improvement for the training outcomes. Additionally, you could add more details about the microlearning platform, such as its features or how it works.
+Recommendations:
+To improve the matching score, you could include more specific details from the website in the ad such as:
+- the names of the case studies
+- the exact percentages of improvement for the training outcomes.
+ Additionally, you could add more details about the microlearning platform, such as its features or how it works.
